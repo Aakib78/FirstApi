@@ -16,7 +16,7 @@ const userRoutes=require("./api/routes/users")
 const productRoutes=require("./api/routes/products")
 const orderRoutes=require("./api/routes/orders")
 
-app.use("/uploads",express.static("uploads"))
+
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
